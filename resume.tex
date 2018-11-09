@@ -4,7 +4,7 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{hyperref}
-\usepackage[left=0.5in, right=1in, top=1in]{geometry}
+\usepackage[left=0.5in, right=1in, top=0.5in]{geometry}
 \setlength{\textheight}{10in} % increase text height to fit on 1-page 
 
 \begin{document} 
@@ -12,22 +12,40 @@
 \begin{center}
 {\Large\bf Joel S. Williamson}
 \end{center}
-\vspace{-5mm}
 \paragraph{}
        \href{mailto:joel@joelwilliamson.ca}{joel@joelwilliamson.ca}\hfill(519) 591-5635\\
        \url{www.joelwilliamson.ca}\hfill14B - 139 Brighton St, Waterloo ON, N2J 4Z5\\
        \url{www.github.com/joelwilliamson}
  
-%\vspace{-5mm}
 \begin{resume}
 
   \section{PROGRAMMING SKILLS}
   \vspace{3mm}
-  Extensive development experience in C++, Haskell, C, Python, OCaml\\
-  Familiar with JavaScipt, LabVIEW, Assembly (MIPS and x86\_64), Verilog, Bash, Tcl, Powershell, Boost\\
+  Extensive development experience in C++, C, Java, Python, Typescript\\
+  Familiar with Haskell, Bash, Boost, TCP\\
   Development tools include Linux (Ubuntu, Red Hat, Centos, Arch), Git, Jenkins, GDB
   \section{WORK EXPERIENCE}
   \vspace{3mm}
+         {\bf Carnegie Technologies -- Software Developer} \hfill February 2017 - Present\vspace{-3mm}
+
+         Link Aggregation Client
+         \begin{itemize}
+         \item Developed Android-based VPN client
+           \begin{itemize}
+           \item Integrated existing SDK into TypeScript based user interface
+           \item Extended SDK with new features and bug-fixes
+           \end{itemize}
+         \item Created Linux test client
+           \begin{itemize}
+           \item Extensible client designed to efficiently test aggregation server
+           \item Performance and correctness testing of new TCP-like protocol
+           \end{itemize}
+         \item Improved server congestion control
+           \begin{itemize}
+           \item Developed congestion control algorithm to optimize usage of multiple networks
+           \end{itemize}
+         \end{itemize}
+
          {\bf Exinda Networks -- C/C++ Software Developer} \hfill August 2015 - October 2016\vspace{-3mm}
 
          Centos-based WAN Optimization firmware
@@ -37,6 +55,10 @@
            \item Implemented comprehensive test suite to ensure functionality was preserved
            \item Rewrote core interface to take advantage of event-based architecture
            \end{itemize}
+         \item Created system to allow L7 classification engine to be upgraded independently of base system
+           \begin{itemize}
+           \item Gave users access to new classifications without impacting system stability or uptime
+           \end{itemize}
          \item Led development of automatic deployment to virtual hosts
            \begin{itemize}
            \item Used Python and VMOMI to create, provision, and convert to template ESXi virtual appliances
@@ -45,14 +67,7 @@
          \item Improved build and continuous integration processes
          \item Fixed bugs in Tcl-based web frontend.
          \end{itemize}
-         {\bf University of Waterloo -- Research Software Developer} \hfill January 2014 - April 2014\vspace{-3mm}
- 
-         Supervised by Professor Richard Mann
-         \begin{itemize}
-         \item Developed LabVIEW based system for detecting low-frequency sounds
-         \item Interfaced with electronic components
-         \end{itemize}
- 
+
 \section{INDEPENDENT PROJECTS}
   \vspace{3mm}
     {\bf MIPS Emulator} -- Developed a emulator to execute MIPS machine language platform independently --
@@ -67,40 +82,11 @@
     \href{https://chrome.google.com/webstore/detail/vcd-viewer/fpacodjpmmabkjooobgbpgpmgbfjidkg?hl=en-US}{Chrome Web Store}
     \vspace{-3mm}
 
-    {\bf Web Server} -- Wrote a web server in C, ported it to C++11 using RAII and generic programming --
-    \href{https://www.github.com/joelwilliamson/JServer}{GitHub}
-    \vspace{-3mm}
-
-    {\bf Lexer} -- Implemented an OCaml program that recognizes strings from a regular language.\\
-%13mm is experimentally derived to get the text aligned
-    \hspace*{10mm}  Building on this, I created a lexer for C --
-    \href{https://www.github.com/joelwilliamson/ndfa}{GitHub}
-    \vspace{-3mm}
-
-    {\bf Game of Life} --Created an engine for Life-like cellular automata on an unbound grid. --
-    \href{https://www.github.com/joelwilliamson/life}{GitHub} \\
-    \hspace*{10mm}  Created a quadtree to represent the current state \\
-    \hspace*{10mm}  Display uses the built-in OCaml graphics capabilities
-    \vspace{-3mm}
-
-    {\bf Reddit Digest} -- Periodically send an email summarizing top submissions on a popular website --
-    \href{https://github.com/joelwilliamson/reddit-digest}{GitHub}\\
-    \hspace*{10mm}  JSON handling, templating and scheduling written in Haskell, using Warp to provide Web interface \\
-    \hspace*{10mm}  SQLite3 backend
-    \vspace{-3mm}
-
     {\bf Bimap} -- Contributor and maintainer of the bimap two-directional lookup package for Haskell
     \href{http://hackage.haskell.org/package/bimap-0.3.0}{Hackage}
-    \pagebreak 
-\section{CONTESTS}
-\vspace{3mm}
-        {\bf Project Euler} -- Computational math problems, Top 80 in Canada
-        \begin{itemize}
-          \item Strong emphasis on developing efficient algorithms
-          \item Solved early problems with C++ -- Excellent for brute-forcing problems
-          \item Later transitioned to OCaml and then Haskell --
-            Functional languages make automatic memoization simple, pattern matching allows easy manipulation of any data
-        \end{itemize}
+    \vspace{-3mm}
+
+    {\bf Project Euler} -- Computational math problems, Top 80 in Canada
 
 \section{EDUCATION}
   \vspace{3mm}
@@ -108,29 +94,5 @@
     Computational Science, Specialization in Physics
     \vspace{-3mm}
  
-    {\bf Scholarships} -- Undergraduate Research Assistantship, President's Scholarship
-    \vspace{-3mm}
- 
-    {\bf Relevant Courses}
-      \vspace{1mm}
-      \begin{itemize}
-       \item Computer Architecture, Operating Systems, Networks and Distributed Systems, Logic and Computation, Software Development, Algorithms and Data Structures
-      \end{itemize}
- 
- 
-\section{COMMUNITY INVOLVEMENT}
-    \vspace{3mm}
-    {\bf Rangemaster} -- Archery Club, University of Waterloo\hfill 2012 -- present\\
-    \vspace{-2mm}
-   \begin{itemize}
-    \item Regularly trained new members in archery essentials and safety procedures
-    \item Designed curriculum to improve beginner progression
-   \end{itemize}
-
-\section{INTERESTS}
-  \vspace{3mm}
-  Skiing (CSIA Certified Instructor), Archery, Reading, Biking, Gymnastic Rings, Cooking
-
-
 \end{resume}
 \end{document}
