@@ -4,8 +4,8 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{hyperref}
-\usepackage[left=0.5in, right=1in, top=0.5in]{geometry}
-\setlength{\textheight}{10in} % increase text height to fit on 1-page 
+\usepackage[left=0.5in, right=1in, top=0.25in]{geometry}
+\setlength{\textheight}{10.2in} % increase text height to fit on 1-page
 
 \begin{document} 
 
@@ -19,21 +19,32 @@
  
 \begin{resume}
 
+  \vspace{-5mm}
   \section{PROGRAMMING SKILLS}
-  \vspace{3mm}
-  Extensive development experience in C++, C, Java, Python, Typescript\\
-  Familiar with Haskell, Bash, Boost, TCP\\
-  Development tools include Linux (Ubuntu, Red Hat, Centos, Arch), Git, Jenkins, GDB
+  Extensive development experience in C++, C, Java, Typescript\\
+  TCP, UDP and IP networking\\
+  Tools include Linux (Ubuntu, Red Hat, Centos, Arch), Git, Jenkins, GDB, Android, JIRA, Ionic
   \section{WORK EXPERIENCE}
-  \vspace{3mm}
          {\bf Carnegie Technologies -- Software Developer} \hfill February 2017 - Present\vspace{-3mm}
 
+         SatBridge App
+         \begin{itemize}
+           \item Created Android and iOS apps to use satellite terminal
+           \begin{itemize}
+             \item Used Cordova and Ionic to develop unified cross-platform UI
+             \item Wrote unit tests with Jest to enable rapid iteration
+             \item Developed platform-specific plugins to allow intelligent network switching
+           \end{itemize}
+         \end{itemize}
+
+         \vspace{-5mm}
          Link Aggregation Client
          \begin{itemize}
          \item Developed Android-based VPN client
            \begin{itemize}
            \item Integrated existing SDK into TypeScript based user interface
            \item Extended SDK with new features and bug-fixes
+           \item Tested using Appium testing framework.
            \end{itemize}
          \item Created Linux test client
            \begin{itemize}
@@ -44,8 +55,14 @@
            \begin{itemize}
            \item Developed congestion control algorithm to optimize usage of multiple networks
            \end{itemize}
+         \item Maintained VoIP client
+           \begin{itemize}
+            \item Worked with client company to maintain and update calling app
+            \item Integrated with market-leading open source SIP client
+           \end{itemize}
          \end{itemize}
 
+         \vspace{-3mm}
          {\bf Exinda Networks -- C/C++ Software Developer} \hfill August 2015 - October 2016\vspace{-3mm}
 
          Centos-based WAN Optimization firmware
@@ -56,13 +73,9 @@
            \item Rewrote core interface to take advantage of event-based architecture
            \end{itemize}
          \item Created system to allow L7 classification engine to be upgraded independently of base system
-           \begin{itemize}
-           \item Gave users access to new classifications without impacting system stability or uptime
-           \end{itemize}
          \item Led development of automatic deployment to virtual hosts
            \begin{itemize}
-           \item Used Python and VMOMI to create, provision, and convert to template ESXi virtual appliances
-           \item Used Microsoft Powershell to do the same with HyperV virtual appliances
+           \item Used Python, Powershell and VMOMI to manage ESXi and HyperV virtual appliances
            \end{itemize}
          \item Improved build and continuous integration processes
          \item Fixed bugs in Tcl-based web frontend.
@@ -70,19 +83,8 @@
 
 \section{INDEPENDENT PROJECTS}
   \vspace{3mm}
-    {\bf MIPS Emulator} -- Developed a emulator to execute MIPS machine language platform independently --
-    \href{https://github.com/joelwilliamson/MIPS-emulator}{GitHub}
-    \vspace{-3mm}
 
-    {\bf Bootloader} -- Developed a x86 program to load and execute other programs in freestanding environment --
-    \href{https://github.com/joelwilliamson/AMD64/tree/master/barebones}{GitHub}
-    \vspace{-3mm}
-
-    {\bf VCD Viewer} -- Created a JavaScipt app to render waveform output of circuit simulators --
-    \href{https://chrome.google.com/webstore/detail/vcd-viewer/fpacodjpmmabkjooobgbpgpmgbfjidkg?hl=en-US}{Chrome Web Store}
-    \vspace{-3mm}
-
-    {\bf Bimap} -- Contributor and maintainer of the bimap two-directional lookup package for Haskell
+    {\bf Bimap} -- Contributor and maintainer of two-directional lookup package for Haskell
     \href{http://hackage.haskell.org/package/bimap-0.3.0}{Hackage}
     \vspace{-3mm}
 
